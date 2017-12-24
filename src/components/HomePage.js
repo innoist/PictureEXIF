@@ -72,12 +72,12 @@ class HomePage extends React.Component {
         <li>Remove the demo and start coding: npm run remove-demo</li>
       </ol>
       {/* <Hammer ><div>Tap Me</div></Hammer>   */}
-      <Hammer options={options} onPinchIn={this.onPinchIn} onPinchOut={this.onPinchOut} onTap={()=>{alert('TAP')}}  >
+      <Hammer options={options} onPinchIn={this.onPinchIn} onPinchOut={this.onPinchOut}   >
         <div>
       <AvatarEditor
         image={this.state.image || "https://www.google.com.au/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"}
-        width={250}
-        height={250}
+        width={450}
+        height={450}
         border={50}
         color={[255, 255, 255, 0.6]} // RGBA
         scale={this.state.profileImageDroppedScale}
